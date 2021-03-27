@@ -6,6 +6,9 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  int selectedPage = 0;
+  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
