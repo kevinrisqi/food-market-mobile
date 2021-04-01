@@ -31,7 +31,6 @@ List<Food> mockFoods = [
     price: 15000,
     rate: 4.5,
   ),
-
   Food(
     id: 2,
     picturePath:
@@ -39,11 +38,11 @@ List<Food> mockFoods = [
     name: "Sate ayam",
     description:
         "Lebaran dengan Sate Ayam Madura? Mengapa tidak? Kita bisa bikin resep Sate Ayam Madura untuk Lebaran ...",
-    ingredients: "Daging ayam fillet, potong dadu 400 gram, Jeruk nipis ½ buah, Merica bubuk ½ sdt, bawang merah, Kacang tanah yang sudah digoreng dan ditumbuk halus 150 gram",
+    ingredients:
+        "Daging ayam fillet, potong dadu 400 gram, Jeruk nipis ½ buah, Merica bubuk ½ sdt, bawang merah, Kacang tanah yang sudah digoreng dan ditumbuk halus 150 gram",
     price: 12000,
     rate: 4.7,
   ),
-
   Food(
     id: 3,
     picturePath:
@@ -51,21 +50,56 @@ List<Food> mockFoods = [
     name: "Ayam bakar",
     description:
         "Sajian ayam bakar hitam manis berikut adalah cara baru menikmati santap bersama keluarga.",
-    ingredients: "1 ekor ayam negeri, potong enam bagian, ½ sdt garam, 1 sdt jeruk nipis, 2 lembar daun salam, 1 batang serai",
+    ingredients:
+        "1 ekor ayam negeri, potong enam bagian, ½ sdt garam, 1 sdt jeruk nipis, 2 lembar daun salam, 1 batang serai",
     price: 17000,
     rate: 4.4,
   ),
-
   Food(
     id: 4,
-    picturePath:
-        "https://www.wowkeren.com/images/news/00110050.jpg",
+    picturePath: "https://www.wowkeren.com/images/news/00110050.jpg",
     name: "Mie daging sapi Taiwan",
     description:
         "Mie daging sapi Taiwan sudah populer ke berbagai belahan dunia. Makanan khas Taiwan mempunyai ciri khas daging yang lebih dominan",
-    ingredients: "Daging sapi, 2 siung bawang putih (geprek), 5 iris jahe (potong tipis, geprek)",
+    ingredients:
+        "Daging sapi, 2 siung bawang putih (geprek), 5 iris jahe (potong tipis, geprek)",
     price: 25000,
     rate: 4.3,
   ),
-
+  Food(
+    id: 5,
+    picturePath:
+        "https://www.unileverfoodsolutions.co.id/dam/global-ufs/mcos/SEA/calcmenu/recipes/ID-recipes/red-meats-&-red-meat-dishes/oxtail-soup/main-header.jpg",
+    name: "Sop buntut sapi",
+    description:
+        "Buntut adalah hidangan unik yang akan memuaskan hari Anda. Manjakan orang lain dengan sop yang kaya ...",
+    ingredients:
+        "Royco Bumbu Pelezat Rasa Sapi 1kg, Buntut, Wortel, Potatoes, Tomat",
+    price: 20000,
+    rate: 4.8,
+  ),
+  Food(
+    id: 6,
+    picturePath:
+        "https://cdn0-production-images-kly.akamaized.net/Jaxy2d6_YWfUQtxywol-dfTp4e4=/640x480/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1253731/original/213c98558a7233f0f923c91df2b986f9beef-curry-recipe-stew-beef-in-coconut-curry.jpg",
+    name: "Rendang daging sapi",
+    description:
+        "Rendang khas Padang memang jadi favorit hampir seluruh orang Indonesia. Daging penuh balutan bumbu ...",
+    ingredients:
+        "Daging sapi: 1 kg, Santan kental, dari 7 butir kelapa: 1,5 liter, Serai, memarkan: 3 batang",
+    price: 27000,
+    rate: 4.9,
+  ),
+  Food(
+    id: 7,
+    picturePath:
+        "https://mykoreankitchen.com/wp-content/uploads/2014/04/Korean-Black-Bean-Sauce-Noodles-Jajangmyeon.jpg",
+    name: "Jajangmyeon",
+    description:
+        "Jajangmyeon is a popular Korean noodle dish mixed in with black bean sauce. Learn how to make it at ...",
+    ingredients:
+        "1 kg fresh jajangmyeon noodles, 1 large onion, 1 medium zucchini",
+    price: 30000,
+    rate: 4.3,
+  ),
 ];

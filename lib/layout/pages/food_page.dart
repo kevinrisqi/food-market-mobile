@@ -69,6 +69,13 @@ class _FoodPageState extends State<FoodPage> {
               ),
             ),
             //// LIST OF FOODS (TABS)
+            Container(
+              width: double.infinity,
+              color: Colors.white,
+              child: Column(children: [
+                CustomtabBar(titles: ['New Taste', 'Popular', 'Recommended'])
+              ],),
+            )
           ],
         )
       ],
