@@ -14,7 +14,7 @@ class CustomtabBar extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            padding: EdgeInsets.only(top: 48),
+            margin: EdgeInsets.only(top: 48),
             height: 1,
             color: "F2F2F2".toColor(),
           ),
@@ -24,12 +24,20 @@ class CustomtabBar extends StatelessWidget {
                   (e) => Padding(
                     padding: EdgeInsets.only(left: defaultMargin),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Text(e,
-                            style: (titles.indexOf(e) == selectedIndex)
-                                ? blackFontStyle3.copyWith(
-                                    fontWeight: FontWeight.w500)
-                                : greyFontStyle),
+                        GestureDetector(
+                          onTap: () {
+                            if (onTap != null) {
+                              onTap(titles.indexOf(e));
+                            }
+                          },
+                          child: Text(e,
+                              style: (titles.indexOf(e) == selectedIndex)
+                                  ? blackFontStyle3.copyWith(
+                                      fontWeight: FontWeight.w500)
+                                  : greyFontStyle),
+                        ),
                         Container(
                           width: 40,
                           height: 3,
