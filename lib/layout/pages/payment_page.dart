@@ -16,8 +16,10 @@ class PaymentPage extends StatelessWidget {
         children: [
           Container(
             margin: EdgeInsets.only(bottom: defaultMargin),
-            padding:
-                EdgeInsets.symmetric(horizontal: defaultMargin, vertical: 16),
+            padding: EdgeInsets.symmetric(
+              horizontal: defaultMargin,
+              vertical: 16,
+            ),
             color: Colors.white,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
