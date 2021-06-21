@@ -90,6 +90,30 @@ class PaymentPage extends StatelessWidget {
                     style: blackFontStyle3,
                   ),
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        '${transaction.food.name}',
+                        style: greyFontStyle,
+                      ),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        '${transaction.food.name}',
+                        style: greyFontStyle,
+                      ),
+                    ),
+                  ],
+                )
               ],
             ),
           )
