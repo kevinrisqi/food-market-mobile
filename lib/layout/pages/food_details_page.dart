@@ -200,7 +200,8 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
                                   onPressed: () {},
                                   child: Text(
                                     'Order Now',
-                                    style: blackFontStyle3.copyWith(fontWeight: FontWeight.w500),
+                                    style: blackFontStyle3.copyWith(
+                                        fontWeight: FontWeight.w500),
                                   ),
                                 ),
                               ),

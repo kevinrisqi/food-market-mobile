@@ -19,7 +19,8 @@ class Food extends Equatable {
       this.rate});
 
   @override
-  List<Object> get props => [id, picturePath, name, description, ingredients, price, rate];
+  List<Object> get props =>
+      [id, picturePath, name, description, ingredients, price, rate];
 }
 
 List<Food> mockFoods = [
@@ -46,10 +47,10 @@ List<Food> mockFoods = [
     price: 12000,
     rate: 4.7,
   ),
-  Food(
+  Food(   
     id: 3,
     picturePath:
-        "https://www.masakapahariini.com/wp-content/uploads/2019/07/ayam-bakar-hitam-manis.jpg",
+        "https://asset.kompas.com/crops/yoovaRyPxaPFOY4gfCciore2eUY=/3x0:700x465/750x500/data/photo/2020/12/30/5fec5602f116e.jpg",
     name: "Ayam bakar",
     description:
         "Sajian ayam bakar hitam manis berikut adalah cara baru menikmati santap bersama keluarga.",
@@ -60,7 +61,7 @@ List<Food> mockFoods = [
   ),
   Food(
     id: 4,
-    picturePath: "https://www.wowkeren.com/images/news/00110050.jpg",
+    picturePath: "https://id-static.rti.org.tw/assets/thumbnails/2020/09/01/4e9bf81b7fcfce04bc10d0b2067bcf13.jpeg",
     name: "Mie daging sapi Taiwan",
     description:
         "Mie daging sapi Taiwan sudah populer ke berbagai belahan dunia. Makanan khas Taiwan mempunyai ciri khas daging yang lebih dominan",

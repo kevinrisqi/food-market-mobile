@@ -49,11 +49,18 @@ class PaymentPage extends StatelessWidget {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              transaction.food.name,
-                              style: blackFontStyle2,
-                              maxLines: 1,
-                              overflow: TextOverflow.clip,
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width -
+                                  2 * defaultMargin -
+                                  60 -
+                                  12 -
+                                  78,
+                              child: Text(
+                                transaction.food.name,
+                                style: blackFontStyle2,
+                                maxLines: 1,
+                                overflow: TextOverflow.clip,
+                              ),
                             ),
                             Text(
                               NumberFormat.currency(
@@ -67,8 +74,21 @@ class PaymentPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Text("item")
+                    Text(
+                      '${transaction.quantity} item(s)',
+                      style: greyFontStyle.copyWith(fontSize: 13),
+                    )
                   ],
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    top: 16,
+                    bottom: 8,
+                  ),
+                  child: Text(
+                    "Details Transaction",
+                    style: blackFontStyle3,
+                  ),
                 ),
               ],
             ),

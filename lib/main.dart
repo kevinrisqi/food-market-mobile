@@ -13,8 +13,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: PaymentPage(
-        transaction: Transaction(food: mockFoods[0], user: mockUser, quantity: 2),
-      )
+        transaction:
+            Transaction(food: mockFoods[0], user: mockUser, quantity: 2),
+      ),
     );
   }
 }
