@@ -12,10 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PaymentPage(
-        transaction:
-            Transaction(food: mockFoods[0], user: mockUser, quantity: 2),
-      ),
+      home: MainPage()
     );
   }
 }
