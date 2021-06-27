@@ -234,145 +234,181 @@ class PaymentPage extends StatelessWidget {
               vertical: 16,
             ),
             color: Colors.white,
-            child: Padding(
-              padding: EdgeInsets.only(
-                top: 40,
-                bottom: 8,
-              ),
-              child: Text(
-                "Deliver to:",
-                style: blackFontStyle3,
-              ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(
+                    top: 16,
+                    bottom: 8,
+                  ),
+                  child: Text(
+                    "Deliver to:",
+                    style: blackFontStyle3,
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        'Name',
+                        style: greyFontStyle,
+                      ),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        'Kevin Risqi Ramadhani',
+                        style: greyFontStyle,
+                        textAlign: TextAlign.right,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 6,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        'Phone No.',
+                        style: greyFontStyle,
+                      ),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        '0877 7706 3035',
+                        style: greyFontStyle,
+                        textAlign: TextAlign.right,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 6,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        'Address',
+                        style: greyFontStyle,
+                      ),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        'Perum Bumi Mas Indah',
+                        style: greyFontStyle,
+                        textAlign: TextAlign.right,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 6,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        'House No.',
+                        style: greyFontStyle,
+                      ),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        'T2 / 17',
+                        style: greyFontStyle,
+                        textAlign: TextAlign.right,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 6,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        'City',
+                        style: greyFontStyle,
+                      ),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        'Malang',
+                        style: greyFontStyle,
+                        textAlign: TextAlign.right,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                width:
-                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
+          Container(
+            alignment: Alignment.bottomCenter,
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width - defaultMargin * 2,
+              height: 45,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: mainColor,
+                  elevation: 0,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+                onPressed: () {},
                 child: Text(
-                  'Name',
-                  style: greyFontStyle,
+                  'Checkout Now',
+                  style: blackFontStyle3.copyWith(fontWeight: FontWeight.w500),
                 ),
               ),
-              SizedBox(
-                width:
-                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
-                child: Text(
-                  'Kevin Risqi Ramadhani',
-                  style: greyFontStyle,
-                  textAlign: TextAlign.right,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 6,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                width:
-                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
-                child: Text(
-                  'Phone No.',
-                  style: greyFontStyle,
-                ),
-              ),
-              SizedBox(
-                width:
-                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
-                child: Text(
-                  '0877 7706 3035',
-                  style: greyFontStyle,
-                  textAlign: TextAlign.right,
-                ),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 6,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                width:
-                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
-                child: Text(
-                  'Address',
-                  style: greyFontStyle,
-                ),
-              ),
-              SizedBox(
-                width:
-                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
-                child: Text(
-                  'Perum Bumi Mas Indah',
-                  style: greyFontStyle,
-                  textAlign: TextAlign.right,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 6,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                width:
-                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
-                child: Text(
-                  'House No.',
-                  style: greyFontStyle,
-                ),
-              ),
-              SizedBox(
-                width:
-                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
-                child: Text(
-                  'T2 / 17',
-                  style: greyFontStyle,
-                  textAlign: TextAlign.right,
-                ),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 6,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                width:
-                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
-                child: Text(
-                  'City',
-                  style: greyFontStyle,
-                ),
-              ),
-              SizedBox(
-                width:
-                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
-                child: Text(
-                  'Malang',
-                  style: greyFontStyle,
-                  textAlign: TextAlign.right,
-                ),
-              ),
-            ],
+            ),
           ),
         ],
       ),
