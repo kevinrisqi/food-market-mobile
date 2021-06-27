@@ -108,15 +108,272 @@ class PaymentPage extends StatelessWidget {
                           defaultMargin -
                           5,
                       child: Text(
-                        '${transaction.food.name}',
+                        NumberFormat.currency(
+                                locale: 'id-ID',
+                                symbol: 'Rp ',
+                                decimalDigits: 0)
+                            .format(
+                                transaction.quantity * transaction.food.price),
                         style: greyFontStyle,
+                        textAlign: TextAlign.right,
                       ),
                     ),
                   ],
-                )
+                ),
+                SizedBox(
+                  height: 6,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        'Driver',
+                        style: greyFontStyle,
+                      ),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        NumberFormat.currency(
+                                locale: 'id-ID',
+                                symbol: 'Rp ',
+                                decimalDigits: 0)
+                            .format(50000),
+                        style: greyFontStyle,
+                        textAlign: TextAlign.right,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 6,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        'Tax 10%',
+                        style: greyFontStyle,
+                      ),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        NumberFormat.currency(
+                                locale: 'id-ID',
+                                symbol: 'Rp ',
+                                decimalDigits: 0)
+                            .format(transaction.quantity *
+                                transaction.food.price *
+                                0.1),
+                        style: greyFontStyle,
+                        textAlign: TextAlign.right,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 6,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        'Total',
+                        style: greyFontStyle,
+                      ),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2 -
+                          defaultMargin -
+                          5,
+                      child: Text(
+                        NumberFormat.currency(
+                                locale: 'id-ID',
+                                symbol: 'Rp ',
+                                decimalDigits: 0)
+                            .format(transaction.quantity *
+                                    transaction.food.price *
+                                    1.1 +
+                                50000),
+                        style: blackFontStyle3.copyWith(
+                          fontWeight: FontWeight.w500,
+                          color: '1ABC9C'.toColor(),
+                        ),
+                        textAlign: TextAlign.right,
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
-          )
+          ),
+          Container(
+            margin: EdgeInsets.only(bottom: defaultMargin),
+            padding: EdgeInsets.symmetric(
+              horizontal: defaultMargin,
+              vertical: 16,
+            ),
+            color: Colors.white,
+            child: Padding(
+              padding: EdgeInsets.only(
+                top: 40,
+                bottom: 8,
+              ),
+              child: Text(
+                "Deliver to:",
+                style: blackFontStyle3,
+              ),
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                width:
+                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
+                child: Text(
+                  'Name',
+                  style: greyFontStyle,
+                ),
+              ),
+              SizedBox(
+                width:
+                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
+                child: Text(
+                  'Kevin Risqi Ramadhani',
+                  style: greyFontStyle,
+                  textAlign: TextAlign.right,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 6,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                width:
+                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
+                child: Text(
+                  'Phone No.',
+                  style: greyFontStyle,
+                ),
+              ),
+              SizedBox(
+                width:
+                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
+                child: Text(
+                  '0877 7706 3035',
+                  style: greyFontStyle,
+                  textAlign: TextAlign.right,
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 6,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                width:
+                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
+                child: Text(
+                  'Address',
+                  style: greyFontStyle,
+                ),
+              ),
+              SizedBox(
+                width:
+                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
+                child: Text(
+                  'Perum Bumi Mas Indah',
+                  style: greyFontStyle,
+                  textAlign: TextAlign.right,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 6,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                width:
+                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
+                child: Text(
+                  'House No.',
+                  style: greyFontStyle,
+                ),
+              ),
+              SizedBox(
+                width:
+                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
+                child: Text(
+                  'T2 / 17',
+                  style: greyFontStyle,
+                  textAlign: TextAlign.right,
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 6,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                width:
+                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
+                child: Text(
+                  'City',
+                  style: greyFontStyle,
+                ),
+              ),
+              SizedBox(
+                width:
+                    MediaQuery.of(context).size.width / 2 - defaultMargin - 5,
+                child: Text(
+                  'Malang',
+                  style: greyFontStyle,
+                  textAlign: TextAlign.right,
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
