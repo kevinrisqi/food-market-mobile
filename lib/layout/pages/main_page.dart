@@ -33,10 +33,10 @@ class _MainPageState extends State<MainPage> {
                   child: FoodPage(),
                 ),
                 Center(
-                  child: OrderHistoryPage(),              
+                  child: OrderHistoryPage(),
                 ),
                 Center(
-                  child: Text("Profile"),
+                  child: ProfilePage(),
                 ),
               ],
             ),
